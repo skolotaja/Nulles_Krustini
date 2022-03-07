@@ -76,12 +76,12 @@ def checkWinner():
 #========================================================================
 def btnClick(button): #padod pogu
     global speletajsX,count #kādi mainīgie tiks izmantoti
-    if button["text"]==" "and speletajsX==True:#spēlē X spēlētājs
+    if button["text"]==""and speletajsX==True:#spēlē X spēlētājs
         button["text"]="X"#maina uz X
         speletajsX=False
         count+=1 # palielina rūtiņu skaitu
         checkWinner()
-    elif button["text"]==" " and speletajsX==False: # mainās spēlētāji
+    elif button["text"]=="" and speletajsX==False: # mainās spēlētāji
         button["text"]="0"
         speletajsX=True
         count+=1
