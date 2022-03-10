@@ -70,7 +70,8 @@ def checkWinner():
         winner=True
         disableButtons()
         messagebox.showinfo("TicTacToe","SpeletajsO ir uzvarētājs")
-    elif count==9 and winner==False:
+    elif count==9:
+        winner=False
         messagebox.showinfo("TicTacToe","Neizšķirts")
         disableButtons()
 #========================================================================
